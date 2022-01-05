@@ -1098,3 +1098,29 @@ function subset() {
  
   }
   property('class')
+
+
+
+   //                            Conditional Operator
+  
+  // program 1
+  // Write a js program to find maximum between two numbers using conditional operator
+  function greaterC_O() {
+    var num1=12
+  var num2=22
+  var greater=num1>num2 ? num1+" Is Greater" : num2+" Is Greater"
+  console.log(greater);
+  }
+  greaterC_O()
+  
+  
+  // program 2
+  // Write a js program to find maximum between three numbers using conditional operator.
+  function greater3C_O(){
+    var num1=20
+    var num2=19
+    var num3=21
+     var number1=num1>num2?num2>num3? num1+" is greater":num3+" is greater":num2+" is greater"
+     console.log(number1);
+  }
+  greater3C_O()
