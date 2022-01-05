@@ -902,3 +902,68 @@ function lasttWord(f) {
     
   }
   deleteobj()
+
+
+  // program 41
+  // Write a JavaScript program to get the length of a JavaScript object.   
+  // Sample object :
+  // var student = {
+  // name : "David Rayy",
+  // sclass : "VI",
+  // rollno : 12 };
+  
+  function lengthobj() {
+    var student = {
+      name : "David Rayy",
+      sclass : "VI",
+      rollno : 12 };
+      var key=Object.keys(student)
+      console.log("length Of object Is:",key.length);
+  }
+  lengthobj()
+
+
+
+  // program 42
+  // Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books.   
+  // var library = [ 
+  //    {
+  //        author: 'Bill Gates',
+  //        title: 'The Road Ahead',
+  //        readingStatus: true
+  //    },
+  //    {
+  //        author: 'Steve Jobs',
+  //        title: 'Walter Isaacson',
+  //        readingStatus: true
+  //    },
+  //    {
+  //        author: 'Suzanne Collins',
+  //        title:  'Mockingjay: The Final Book of The Hunger Games', 
+  //        readingStatus: false
+  //    }];
+  
+  function displayobj() {
+    var library = [ 
+         {
+             author: 'Bill Gates',
+             title: 'The Road Ahead',
+             readingStatus: true
+         },
+         {
+             author: 'Steve Jobs',
+             title: 'Walter Isaacson',
+             readingStatus: true
+         },
+         {
+             author: 'Suzanne Collins',
+             title:  'Mockingjay: The Final Book of The Hunger Games', 
+             readingStatus: false
+         }];
+  
+         for(let x=0;x<library.length;x++){
+           console.log(library[x].readingStatus);
+         }
+    
+  }
+  displayobj()
