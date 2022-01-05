@@ -664,4 +664,76 @@ function allAccur(char) {
   }
   firstWord("I")
 
+
+
+
+   // program 29
+// Write a js program to find last occurrence of a word in a given string.
+function lasttWord(f) {
+    var string='I Love My Country Pakistan'
+   var array=string.split(" ")
+   var yess=0
+    for(let x=array.length-1;x>=0;x--){
+           if (array[x]==f) {
+             x++
+             console.log(f," Is Found At Position",x);
+             yess++
+             break
+           }
+    }
+    if (yess==0) {
+      
+      console.log("Given Word Is Not Found In STring");
+    }
+  }
+  lasttWord("Country")
+
+
+
+
+  // program 30
+  // Write a js program to search all occurrences of a word in given string.
   
+  function allWord(word) {
+    var string='i Love My Country i Pakistan'
+   var array=string.split(" ")
+   var index=[]
+   var yess=0
+    for(let x=0;x<array.length;x++){
+           if (array[x]==word) {
+            index.push(x)
+             yess++
+            }
+          }
+  
+          if (yess>0) {
+      console.log(word," Is Found At Index",index); 
+       }
+       else{
+         console.log("Given Word Is Not Found In String");
+       }
+  }
+  allWord("i")
+
+
+   // program 31
+  // Write a js program to count occurrences of a word in a given string.
+  function countWord(word) {
+    var string='i Love My Country i Pakistan'
+   var array=string.split(" ")
+   var index=[]
+   var yess=0
+    for(let x=0;x<array.length;x++){
+           if (array[x]==word) {
+             yess++
+            }
+          }
+  
+          if (yess>0) {
+      console.log(word," Is Occur",yess,"Times"); 
+       }
+       else{
+         console.log("Given Word Is Not Found In String");
+       }
+  }
+  countWord("i")
