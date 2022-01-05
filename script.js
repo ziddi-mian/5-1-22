@@ -1000,3 +1000,101 @@ function lasttWord(f) {
   console.log(array);
   }
   bubleSort()
+
+
+
+  // program 45
+// Write a JavaScript program which returns a subset of a string.   
+// Sample Data: dog
+// Expected Output: ["d", "do", "dog", "o", "og", "g"]
+
+function subset() {
+    var string='Dogs'
+    var array=[]
+    for(let x=0;x<string.length;x++){
+      for(let y=x+1;y<=string.length;y++){
+          array.push(string.slice(x,y))
+        }
+      }
+      console.log("Subset Of Given String Is:",array);
+  }
+  subset()
+
+
+
+  // program 47
+  // Write a JavaScript program to calculate the area and perimeter of a circle.   
+  // Note : Create two methods to calculate the area and perimeter. The radius of the circle will be supplied by the user.
+  
+  function Areapara(r) {
+    var area=Math.PI*r*r
+    var para=Math.PI*2*r
+    console.log("Parimeter Of Circle:",para.toFixed(5));
+    console.log("Area Of Circle:",area.toFixed(5))
+    
+  }
+  Areapara(10)
+
+
+
+
+   // program 48
+  // Write a JavaScript function to print all the methods in an JavaScript object.
+  
+  function objectname(any) {
+    return Object.getOwnPropertyNames(any)
+    
+  }
+  console.log(objectname(Array));
+
+
+
+  // program 49
+  // Write a JavaScript function to retrieve all the values of an object's properties.
+  function allValue() {
+    var object1={
+      name:'Usama',
+      fatherName:'Azam',
+      class:'BsCs',
+      rollno:11931,
+    }
+    console.log(Object.values(object1));
+  }
+  allValue()
+
+
+   // program 49
+  // Write a JavaScript function to retrieve all the values of an object's properties.
+  function allValue() {
+    var object1={
+      name:'Usama',
+      fatherName:'Azam',
+      class:'BsCs',
+      rollno:11931,
+    }
+    console.log(Object.values(object1));
+  }
+  allValue()
+
+
+
+  // program 50
+  // Write a JavaScript function to check whether an object contains given property. 
+  function property(obj) {
+    student={
+      sName:'M.Usama',
+      sFatherName:'M.Azam',
+      class:"BsCs",
+      section:"Evening",
+      rollno:"11931"
+    }
+    if (student.hasOwnProperty(obj)) {
+      console.log("Student Object Has This Property");
+    }
+    else{
+     console.log("Student Object Has Not This Property");
+ 
+    }
+ 
+  }
+  property('class')
