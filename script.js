@@ -823,3 +823,34 @@ function lasttWord(f) {
     
   }
   trailingSpace()
+
+
+  // program 37
+  // Write a js program to trim both leading and trailing white space characters from given string.
+  function trimBoth() {
+    var string='    I love my country pakistan      '
+    var news=string.trim()
+    console.log("After Removing Leading And Trailing White Space:",news);
+    
+  }
+  trimBoth()
+
+
+  //  program 38
+  // Write a js program to remove all extra blank spaces from given string.
+  function extraSpace() {
+    var string='    I love Pakistan   is my country   '
+    var news=string.trim()
+    var array=news.split(" ")
+    for(let x=0;x<array.length;x++){
+  
+      if (array[x]=="") {
+        array.splice(x,1)
+        x--
+      }
+    }
+    var result=array.join(" ")
+    console.log("After Removing All Extra White Space:",result);
+    
+  }
+  extraSpace()
